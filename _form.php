@@ -13,11 +13,11 @@
         
             <div class="col">
             <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                <input type="text" class="form-control" name="nome" placeholder="Ex.: Naruto" aria-label="Nome">
+                <input type="text" class="form-control" name="num1" placeholder="Ex.: Naruto" aria-label="Nome">
             </div>
             <div class="col">
             <label for="exampleFormControlInput1"  class="form-label">Sobrenome</label>
-                <input type="text" class="form-control" name="sobrenome" placeholder="Ex.: Pedreira" aria-label="Sobrenome">
+                <input type="text" class="form-control" name="num2" placeholder="Ex.: Pedreira" aria-label="Sobrenome">
             </div>
         
             <div class="mb-3">
@@ -36,28 +36,38 @@
   </form>
     <?php 
     // validação por GET
-    $nome = @$_GET['nome'];
-    $sobrenome = @$_GET['sobrenome'];
-    $email = @$_GET['email'];
-    $text = @$_GET['texto'];
-    echo $nome." ".$sobrenome;
-    echo '<br/>';
-    echo $email;
-    echo '<br/>';
-    echo $text;
+    // $nome = @$_GET['nome'];
+    // $sobrenome = @$_GET['sobrenome'];
+    // $email = @$_GET['email'];
+    // $text = @$_GET['texto'];
+    // echo $nome." ".$sobrenome;
+    // echo '<br/>';
+    // echo $email;
+    // echo '<br/>';
+    // echo $text;
     
     ?>
-    <?php 
+     <?php 
     // validação por POST
-    $nome = @$_POST['nome'];
-    $sobrenome = @$_POST['sobrenome'];
-    $email = @$_POST['email'];
-    $text = @$_POST['texto'];
-    echo $nome." ".$sobrenome;
+    // $nome = @$_POST['nome'];
+    // $sobrenome = @$_POST['sobrenome'];
+    // $email = @$_POST['email'];
+    // $text = @$_POST['texto'];
+    // echo $nome." ".$sobrenome;
+    // echo '<br/>';
+    // echo $email;
+    // echo '<br/>';
+    // echo $text;
+    
+    ?> 
+    <?php 
+    // calculadora com POST
+    $nome = @$_POST['num1'];
+    $sobrenome = @$_POST['num2'];
     echo '<br/>';
-    echo $email;
-    echo '<br/>';
-    echo $text;
+    $res = $nome + $sobrenome;
+    echo "<h1>************* $res *************</h1>";
+    
     
     ?>
 
